@@ -1,0 +1,317 @@
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 2500px; /* Altura total de la página */
+    width: 1250px; /* Ancho total de la página */
+}
+
+/* Estilos del encabezado y la barra de navegación */
+header {
+    background-color: #333;
+    color: white;
+    padding: 2vh 0;
+    width: 100vw;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline;
+    padding: 0 2vw;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 16vw;
+    box-shadow: 0px 0.8vh 1.6vh 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 1.2vh 1.6vw;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilos de la sección hero */
+.hero {
+    position: relative;
+    background: url('./img/hero.jpg') no-repeat center center/cover;
+    height: 40vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2vh;
+}
+
+.hero h1 {
+    font-size: 3vh;
+    margin: 0;
+}
+
+.hero h2 {
+    font-size: 2vh;
+    margin: 1vh 0;
+}
+
+.hero p {
+    font-size: 1.2vh;
+}
+
+.hero button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 1vh 2vw;
+    font-size: 1vh;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #e65c00;
+}
+
+/* Estilos de la sección de servicios */
+.servicios {
+    display: flex;
+    justify-content: space-around;
+    padding: 2vh;
+    background-color: #f4f4f4;
+    flex-wrap: wrap;
+}
+
+.servicios div {
+    text-align: center;
+    flex: 1 1 30vw;
+    margin: 1vh;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicios div:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del elemento */
+    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.2); /* Añade una sombra */
+}
+
+.servicios img {
+    max-width: 100%;
+    height: auto;
+}
+
+.servicios .uno {
+    font-size: 1.5vh;
+    font-weight: bold;
+}
+
+.servicios .dos {
+    font-size: 1vh;
+}
+
+/* Estilos de la sección sobre mí */
+.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2vh;
+    background-color: #fff;
+}
+
+.acerca img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sobre ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sobre ul li {
+    margin: 1vh 0;
+}
+
+/* Estilos de los botones de desplazamiento */
+#scrollUpBtn, #scrollDownBtn {
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 1vh;
+    cursor: pointer;
+    display: none;
+}
+
+#scrollUpBtn:hover, #scrollDownBtn:hover {
+    background-color: #555;
+}
+
+/* Estilos de la sección de contacto */
+.contacto {
+    padding: 2vh;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contacto .uno {
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+.contacto .dos {
+    font-size: 1.2vh;
+    margin: 1vh 0;
+}
+
+.contacto iframe {
+    width: 100%;
+    height: 60vh;
+    border: 1px solid black; /* Añade un borde de 1px sólido y negro */
+    margin-top: 2vh;
+}
+
+/* Estilos del formulario de contacto */
+.formulario {
+    padding: 2vh;
+    background-color: #fff;
+    text-align: center;
+}
+
+.formulario h1 {
+    font-size: 2vh;
+}
+
+.formulario label {
+    display: block;
+    margin: 1vh 0;
+}
+
+.formulario input, .formulario textarea {
+    width: 80%;
+    padding: 1vh;
+    margin: 1vh 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 1vh 2vw;
+    font-size: 1vh;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #e65c00;
+}
+
+/* Estilos del pie de página */
+#footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1vh 0;
+}
+
+#footer p {
+    margin: 0;
+}
+
+#footer span {
+    font-weight: bold;
+}
+
+/* Media Queries para diseño responsive */
+@media (max-width: 768px) {
+    .navbar li {
+        display: block;
+        padding: 1vh 0;
+    }
+
+    .hero {
+        height: auto;
+        padding: 2vh;
+    }
+
+    .hero h1 {
+        font-size: 2vh;
+    }
+
+    .hero h2 {
+        font-size: 1.5vh;
+    }
+
+    .hero p {
+        font-size: 1vh;
+    }
+
+    .servicios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto iframe {
+        height: 40vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5vh;
+    }
+
+    .hero h2 {
+        font-size: 1.2vh;
+    }
+
+    .hero p {
+        font-size: 0.9vh;
+    }
+
+    .hero button {
+        padding: 0.8vh 1.6vw;
+        font-size: 

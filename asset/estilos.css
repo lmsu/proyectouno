@@ -1,0 +1,103 @@
+/* Colocar la var root de colores */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "logo logo logo"
+        "menu menu menu"
+        "banner banner banner"
+        "cont-fotos cont-fotos cont-fotos"
+        "cont-foto-text cont-foto-text"
+        "mapa mapa"
+        "pie pie pie";
+    gap: 10px;
+}
+
+header {
+    grid-area: logo;
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+
+#menu {
+    grid-area: menu;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#banner {
+    grid-area: banner;
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+#cont-fotos {
+    grid-area: cont-fotos;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+#cont-fotos .foto {
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+#cont_foto-text {
+    grid-area: cont-foto-text;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+#cont_foto-text .foto, #cont_foto-text .text {
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+#mapa {
+    grid-area: mapa;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+#mapa .text, #mapa .foto {
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+#pie {
+    grid-area: pie;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
