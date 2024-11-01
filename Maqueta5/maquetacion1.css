@@ -6,37 +6,37 @@
 
 #contenedor {
     width: 1250px;
-    height: 1800px;
-    background-color: aquamarine;
+    height: 2500px;
+    background-color: rgb(2, 76, 51);
     margin: 0.5em auto;
     padding: 0.5em;
 }
 
 #header {
-    height: 7%;
+    height: 7vh;
     background-color: #868484;
     border-radius: 1em;
     margin: 1em;
     color: white;
-    font-size: 20px;
+    font-size: 10px;
     align-content: center;
 }
 
 #header-1 {
     height: 30%;
     width: 30%;
-    background-color: #A4A4A4;  
+    background-color: #a4a4a4;  
     border-radius: 1em;
     margin: 1em;
 }
 
 #nav {
-    height: 12%;
+    height: 12vh;
     background-color: #868484;
     border-radius: 1em;
     margin: 1em;
     color: white;
-    font-size: 20px;
+    font-size: 10px;
     align-content: center;
 }
 
@@ -49,41 +49,41 @@
 }
 
 #contenido {
-    height: 50%;
-    background-color: #868484;
+    height: 100vh;
+    background-color: #f5abab;
     border-radius: 1em;
     margin: 1em;
     color: white;
-    font-size: 20px;
+    font-size: 10px;
     align-content: center;
 }
 
 #section-1 {
-    height: 30%;
+    height: 30vh;
     width: 98%;
-    background-color: #6ed7f1;
+    background-color: #efcf86;
     border-radius: 1em;
     margin: 1em;
-    font-size: 20px;
+    font-size: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .articulo {
-    width: 40%;
+    width: 40vh;
     height: 85%;
     color: white;
     background-color: #A4A4A4;
     margin: 1em;
     border-radius: 1em;
     color: white;
-    font-size: 20px;
+    font-size: 10px;
     align-content: center;
 }
 
 #section-2 {
-    height: 30%;
+    height: 30vh;
     width: 98%;
     background-color: #A4A4A4;
     color: white;
@@ -93,13 +93,13 @@
     flex-direction: row;
     justify-content: space-between;
     color: white;
-    font-size: 20px;
+    font-size: 10px;
     align-content: center;
 }
 
 .acer-1 {    
     width: 60%;
-    height: 85%;
+    height: 25vh;
     color: white;
     background-color: #47e862;
     margin: 1em;
@@ -111,7 +111,7 @@
 
 .acer-2 {
     width: 30%;
-    height: 85%;
+    height: 25vh;
     color: white;
     background-color: #04c323;
     margin: 1em;
@@ -156,14 +156,21 @@
     width: 85%;
     height: 70%;
 }
-
+#formulario {
+    height: 25%;
+    background-color: #f57171;
+    color: white;
+    border-radius: 1em;
+    margin: 1em;
+    align-content: center;
+}
 #footer {
     height: 10%;
     background-color: #868484;
     color: white;
     border-radius: 1em;
     margin: 1em;
-    color: white;
     font-size: 20px;
     align-content: center;
 }
+
